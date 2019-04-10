@@ -1,0 +1,23 @@
+  nginx:
+    build: ./nginx/
+    ports:
+      - 8080:80
+    links:
+      - phpfpm
+    volumes:
+      - ~/git/RVIRUS0817/cakephp2_tutorials/cakephp:/var/www/html
+
+  phpfpm:
+    build: ./phpfpm/
+    links:
+      - mysql
+    volumes:
+      - ~/git/RVIRUS0817/cakephp2_tutorials/cakephp:/var/www/html
+
+  mysql:
+    image: mysql:8.0.12
+    environment:
+      MYSQL_DATABASE: my_app
+      MYSQL_USER: my_app
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: password   
