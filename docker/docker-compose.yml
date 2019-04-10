@@ -15,7 +15,7 @@
       - ~/git/RVIRUS0817/cakephp2_tutorials/cakephp:/var/www/html
 
   mysql:
-    image: mysql:8.0.12
+    image: mysql:5.7
     environment:
       MYSQL_DATABASE: my_app
       MYSQL_USER: my_app
