@@ -1,7 +1,6 @@
 FROM php:7.2-fpm-alpine3.9
 RUN curl -sS https://getcomposer.org/installer | php && \
     php composer.phar require "cakephp/cakephp":"~2.10" && \
-    php composer-setup.php && \
     php -r "unlink('composer-setup.php');" && \
     mv composer.phar /usr/local/bin/composer && \
     apt-get update && \
@@ -10,6 +9,4 @@ RUN curl -sS https://getcomposer.org/installer | php && \
     apt-get install -y git && \
     apt-get install -y zip unzip && \
     composer config -g repos.packagist composer https://packagist.jp && \
-    composer global require hirak/prestissimo && \
-    cd /var/www/html && \
-    composer create-project --prefer-dist cakephp/app myapp
+    composer global require hirak/prestissimo
