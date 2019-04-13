@@ -12,6 +12,9 @@ tutorials
 - start dev container
 
 ```
+$ cd 
+fork my repository
+$ cd docker
 $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 $ cd /var/www/html
