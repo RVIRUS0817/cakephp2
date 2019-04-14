@@ -15,6 +15,7 @@ tutorials
 $ cd 
 fork my repository
 $ cd docker
+$ docker-compose build
 $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 $ cd /var/www/html/cakephp2
