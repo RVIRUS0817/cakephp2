@@ -21,3 +21,12 @@ $ cd /var/www/html/cakephp2
 $ Vendor/bin/cake bake project /var/www/html/cakephp2
 $ composer create-project --prefer-dist cakephp/app my_app
 ```
+
+- change database
+
+```
+$ cd cakephp2.10/cakephp2/cakephp/Config
+$ cp database.php.default database.php
+$ vim database.php
+add database,user,pass
+```
