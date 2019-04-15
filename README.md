@@ -39,7 +39,7 @@ $ docker exec -it docker_phpfpm_1 sh
 # cd /var/www/html/cakephp2
 # php composer.phar install
 # Vendor/bin/cake bake project /var/www/html/cakephp2
-# composer create-project --prefer-dist cakephp/app my_app
+# composer create-project --prefer-dist cakephp/app cakephp
 ```
 
 
@@ -52,7 +52,7 @@ $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 # cd /var/www/html/cakephp2
 # Vendor/bin/cake bake project /var/www/html/cakephp2
-# composer create-project --prefer-dist cakephp/app my_app
+# composer create-project --prefer-dist cakephp/app cakephp
 ```
 
 - change database
