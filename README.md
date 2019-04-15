@@ -18,6 +18,8 @@ Please refer to 2 if you use it after the second time.
 ```
 fork my repository
 $ rm -rf cakephp2.10/cakephp2/cakephp/*
+$ cd cakephp2.10/cakephp2/
+$ git clone -b 2.x git://github.com/cakephp/cakephp.git
 $ vim cake2.10/cakephp2/cakephp/composer.json
 
 {
@@ -34,10 +36,10 @@ $ cd docker
 $ docker-compose build
 $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
-$ cd /var/www/html/cakephp2
-$ php composer.phar install
-$ Vendor/bin/cake bake project /var/www/html/cakephp2
-$ composer create-project --prefer-dist cakephp/app my_app
+# cd /var/www/html/cakephp2
+# php composer.phar install
+# Vendor/bin/cake bake project /var/www/html/cakephp2
+# composer create-project --prefer-dist cakephp/app my_app
 ```
 
 
@@ -48,9 +50,9 @@ $ cd docker
 $ docker-compose build
 $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
-$ cd /var/www/html/cakephp2
-$ Vendor/bin/cake bake project /var/www/html/cakephp2
-$ composer create-project --prefer-dist cakephp/app my_app
+# cd /var/www/html/cakephp2
+# Vendor/bin/cake bake project /var/www/html/cakephp2
+# composer create-project --prefer-dist cakephp/app my_app
 ```
 
 - change database
