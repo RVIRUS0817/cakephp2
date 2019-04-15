@@ -34,3 +34,7 @@ database:my_app
 login:root
 pass:test
 ```
+
+- accessl url
+
+http://localhost:8080/
