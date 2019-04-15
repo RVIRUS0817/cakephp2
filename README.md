@@ -29,5 +29,8 @@ $ composer create-project --prefer-dist cakephp/app my_app
 $ cd cakephp2.10/cakephp2/cakephp/Config
 $ cp database.php.default database.php
 $ vim database.php
-add database,user,pass
+host:mysql
+database:my_app
+login:root
+pass:test
 ```
