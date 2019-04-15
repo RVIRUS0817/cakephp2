@@ -9,10 +9,40 @@ tutorials
 
 ## dev
 
-- start dev container
+First, please refer to 1 if you are starting for the first time.  
+Please refer to 2 if you use it after the second time.
+
+
+- ① If you are starting for the first time
 
 ```
-$ cd 
+fork my repository
+$ rm -rf cakephp2.10/cakephp2/cakephp/*
+$ vim cake2.10/cakephp2/cakephp/composer.json
+
+{
+    "name": "my_app",
+    "require": {
+        "cakephp/cakephp": "2.10.*"
+    },
+    "config": {
+        "vendor-dir": "Vendor/"
+    }
+}
+
+$ cd docker
+$ docker-compose build
+$ docker-compose up -d
+$ docker exec -it docker_phpfpm_1 sh
+$ cd /var/www/html/cakephp2
+$ php composer.phar install
+$ Vendor/bin/cake bake project /var/www/html/cakephp2
+$ composer create-project --prefer-dist cakephp/app my_app
+```
+
+
+- ② One that starts from the second time
+```
 fork my repository
 $ cd docker
 $ docker-compose build
