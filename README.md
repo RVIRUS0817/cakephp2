@@ -33,7 +33,7 @@ $ vim cake2.10/cakephp2/cakephp/composer.json
 
 $ cd docker
 $ docker-compose up -d
-$ docker exec -it docker_phpfpm_1 sh
+$ docker exec -it cake3-phpfpm sh
 # cd /var/www/html/cakephp2
 # php composer.phar install
 # Vendor/bin/cake bake project /var/www/html/cakephp2
