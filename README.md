@@ -32,7 +32,6 @@ $ vim cake2.10/cakephp2/cakephp/composer.json
 }
 
 $ cd docker
-$ docker-compose build
 $ docker-compose up -d
 $ docker exec -it docker_phpfpm_1 sh
 # cd /var/www/html/cakephp2
