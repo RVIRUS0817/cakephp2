@@ -39,18 +39,6 @@ $ docker exec -it docker_phpfpm_1 sh
 # Vendor/bin/cake bake project /var/www/html/cakephp2
 # composer create-project --prefer-dist cakephp/app cakephp
 ```
-
-
-- ② One that starts from the second time
-```
-fork my repository
-$ cd docker
-$ docker-compose up -d
-$ docker exec -it docker_phpfpm_1 sh
-# cd /var/www/html/cakephp2
-# Vendor/bin/cake bake project /var/www/html/cakephp2
-```
-
 - change database
 
 ```
@@ -61,6 +49,13 @@ host:mysql
 database:my_app
 login:root
 pass:test
+```
+
+- ② One that starts from the second time
+```
+fork my repository
+$ cd docker
+$ docker-compose up -d
 ```
 
 - accessl url
